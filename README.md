@@ -1,6 +1,6 @@
 # What is SBT?
 
-![logo](logo.png)
+![logo](https://raw.githubusercontent.com/docker-sbt/latest/logo.png)
 
 sbt is an open source build tool for Scala and Java projects, similar to Java's Maven or Ant.
 
