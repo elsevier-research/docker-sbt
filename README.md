@@ -12,6 +12,7 @@ This image is based on [Oracle JRE 8](https://github.com/1science/docker-java/tr
 # Supported tags
 
 -	[`0.13.8`, `latest`](https://github.com/1science/docker-sbt/tree/0.13.8)
+-	[`0.13.7`](https://github.com/1science/docker-sbt/tree/0.13.7)
 
 
 # Usage
@@ -19,7 +20,7 @@ This image is based on [Oracle JRE 8](https://github.com/1science/docker-java/tr
 You can run the default `sbt` command simply:
 
 ```
- docker run -ti --rm 1science/sbt:0.13.7 sbt sbt-version 
+ docker run -ti --rm 1science/sbt sbt sbt-version 
 ```
 
 This image is configured with a workdir `/src`, so to build your project you have to mount a volume for your sources and another at `/root/.ivy2` to hold the ivy cache artifacts :
