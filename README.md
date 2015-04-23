@@ -6,15 +6,8 @@ sbt is an open source build tool for Scala and Java projects, similar to Java's 
 
 > [wikipedia.org/wiki/SBT_(software))
 
-This image is based on [Oracle JRE 8](https://github.com/1science/docker-java/tree/oracle-jre-8) and the image size is approximately 230 MB.
+This image is based on [Oracle JRE 8](https://github.com/1science/docker-java/tree/oracle-jre-8) and the image size is approximately 178 MB.
 
-# Included plugins
-
-The following [Elasticsearch plugins](http://www.elastic.co/guide/en/elasticsearch/reference/1.x/modules-plugins.html) are installed :
-
- - [Kopf](https://github.com/lmenezes/elasticsearch-kopf) : Web admin interface for elasticsearch
- - [HQ] (https://github.com/royrusso/elasticsearch-HQ) : Monitoring and Management Web Application 
- - [AWS Cloud](https://github.com/elastic/elasticsearch-cloud-aws) : EC2 discovery and S3 Repository
 
 # Supported tags
 
@@ -23,29 +16,18 @@ The following [Elasticsearch plugins](http://www.elastic.co/guide/en/elasticsear
 
 # Usage
 
-You can run the default `elasticsearch` command simply:
+You can run the default `sbt` command simply:
 
 ```
-docker run -d 1science/elasticsearch
+ docker run -ti --rm 1science/sbt:0.13.7 sbt sbt-version 
 ```
 
-You can also pass in additional flags to `elasticsearch`:
+This image is configured with a workdir `/src`, so to build your project you have to mount a volume for your sources and another at `/root/.ivy2` to hold the ivy cache artifacts :
 
 ```
-docker run -d 1science/elasticsearch elasticsearch -Des.node.name="TestNode"
+docker run -ti --rm -v "$PWD:/src" -v "$HOME/.ivy2":/root/.ivy2 1science/sbt sbt clean compile
 ```
 
-This image comes with a default set of configuration files for `elasticsearch`, but if you want to provide your own set of configuration files, you can do so via a volume mounted at `/usr/share/elasticsearch/config`:
-
-```
-docker run -d -v "$PWD/config":/usr/share/elasticsearch/config 1science/elasticsearch
-```
-
-This image is configured with a volume at `/usr/share/elasticsearch/data` to hold the persisted index data. Use that path if you would like to keep the data in a mounted volume:
-
-```
-docker run -d -v "$PWD/esdata":/usr/share/elasticsearch/data 1science/elasticsearch
-```
 
 # License
 
