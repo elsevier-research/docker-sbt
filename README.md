@@ -1,3 +1,5 @@
+[![](https://badge.imagelayers.io/1science/sbt:latest.svg)](https://imagelayers.io/?images=1science/sbt:latest 'Get your own badge on imagelayers.io')
+
 # What is SBT?
 
 ![logo](https://raw.githubusercontent.com/1science/docker-sbt/latest/logo.png)
@@ -6,7 +8,7 @@ sbt is an open source build tool for Scala and Java projects, similar to Java's 
 
 > [wikipedia.org/wiki/SBT_(software))
 
-This image is based on [Oracle JRE 8](https://github.com/1science/docker-java/tree/oracle-jre-8) and the image size is approximately 178 MB.
+This image is based on [Oracle JRE 8](https://github.com/1science/docker-java/tree/oracle-jre-8).
 
 
 # Supported tags
