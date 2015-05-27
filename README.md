@@ -25,7 +25,7 @@ You can run the default `sbt` command simply:
  docker run -ti --rm 1science/sbt sbt sbt-version 
 ```
 
-This image is configured with a workdir `/src`, so to build your project you have to mount a volume for your sources and another at `/root/.ivy2` to hold the ivy cache artifacts :
+This image is configured with a workdir `/app`, so to build your project you have to mount a volume for your sources and another at `/root/.ivy2` to hold the ivy cache artifacts :
 
 ```
 docker run -ti --rm -v "$PWD:/src" -v "$HOME/.ivy2":/root/.ivy2 1science/sbt sbt clean compile
