@@ -8,11 +8,12 @@ sbt is an open source build tool for Scala and Java projects, similar to Java's 
 
 > [wikipedia.org/wiki/SBT_(software))
 
-This image is based on [Oracle JRE 8](https://github.com/1science/docker-java/tree/oracle-jre-8).
+This image is based on [Oracle JRE 7](https://github.com/1science/docker-java/tree/oracle-jre-7).
 
 
 # Supported tags
 
+-	[`0.13.8-oracle-jre-7`](https://github.com/1science/docker-sbt/tree/0.13.8-oracle-jre-7)
 -	[`0.13.8`, `latest`](https://github.com/1science/docker-sbt/tree/0.13.8)
 -	[`0.13.7`](https://github.com/1science/docker-sbt/tree/0.13.7)
 

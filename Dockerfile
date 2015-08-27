@@ -1,8 +1,8 @@
 #
-# SBT image based on Oracle JRE 8
+# SBT image based on Oracle JRE 7
 #
 
-FROM 1science/java:oracle-jre-8
+FROM 1science/java:oracle-jre-7
 MAINTAINER 1science Devops Team <devops@1science.org>
 
 ENV SBT_VERSION 0.13.8
