@@ -13,8 +13,8 @@ This image is based on [Oracle JRE 8](https://github.com/1science/docker-java/tr
 
 # Supported tags
 
--	[`0.13.8-oracle-jre-8`, `latest`](https://github.com/1science/docker-sbt/tree/0.13.8-oracle-jre-8)
--	[`0.13.8-oracle-jre-7`, `latest`](https://github.com/1science/docker-sbt/tree/0.13.8-oracle-jre-7)
+-	[`0.13.8-oracle-jre-8`](https://github.com/1science/docker-sbt/tree/0.13.8-oracle-jre-8)
+-	[`0.13.8-oracle-jre-7`](https://github.com/1science/docker-sbt/tree/0.13.8-oracle-jre-7)
 
 
 # Usage
