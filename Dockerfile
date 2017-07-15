@@ -5,7 +5,9 @@
 FROM 1science/java:oracle-jre-8
 MAINTAINER 1science Devops Team <devops@1science.org>
 
-ENV SBT_VERSION 0.13.11
+# Default to UTF-8 file.encoding
+ENV LANG C.UTF-8
+ENV SBT_VERSION 0.13.15
 ENV SBT_HOME /usr/local/sbt
 ENV PATH ${PATH}:${SBT_HOME}/bin
 
